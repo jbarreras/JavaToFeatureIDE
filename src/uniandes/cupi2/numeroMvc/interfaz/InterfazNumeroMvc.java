@@ -30,6 +30,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 
+import annotation.Feature;
+import annotation.Or;
+import annotation.Root;
 import uniandes.cupi2.numeroMvc.interfaz.binario.VentanaBinario;
 import uniandes.cupi2.numeroMvc.interfaz.color.VentanaColor;
 import uniandes.cupi2.numeroMvc.interfaz.notas.VentanaNotas;
@@ -40,6 +43,7 @@ import uniandes.cupi2.numeroMvc.mundo.Numero;
 /**
  * Esta es la ventana principal de la aplicación.
  */
+@Root
 public class InterfazNumeroMvc extends JFrame implements ActionListener {
 	// -----------------------------------------------------------------
 	// Constantes
@@ -189,6 +193,7 @@ public class InterfazNumeroMvc extends JFrame implements ActionListener {
 	/**
 	 * Crea una nueva ventana (vista-controlador) del número (modelo).
 	 */
+	@Or
 	public void crearNuevaVentana() {
 		JInternalFrame ventana = null;
 		//

@@ -1,8 +1,8 @@
 package code;
 
-import annotation.Feature;
+import annotation.*;
 
-@Feature(featureName = "TestClass")
+@Feature
 public class TestClass {
 
 	int i;

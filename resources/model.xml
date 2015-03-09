@@ -1,6 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <featureModel xsi:schemaLocation="./resources/featureide.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <struct>
-        <and name="Biblioteca"/>
+        <and name="app.interfaz.InterfazNumeroMvc">
+            <and mandatory="true" name="app.mundo.Numero">
+                <and mandatory="true" name="app.mundo.Numero.darNumero[]"/>
+                <and mandatory="true" name="app.mundo.Numero.metodo1[]"/>
+                <and mandatory="true" name="app.mundo.Numero.metodo2[]"/>
+                <and mandatory="true" name="app.mundo.Numero.cambiarNumero[int]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.romano.PanelRomano">
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.darRomano[int]"/>
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.actionPerformed[java.awt.event.ActionEvent]"/>
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.anterior[]"/>
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.removeNotify[]"/>
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.siguiente[]"/>
+                <and mandatory="true" name="app.interfaz.romano.PanelRomano.update[java.util.Observable,java.lang.Object]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.romano.VentanaRomano"/>
+            <and mandatory="true" name="app.interfaz.numero.PanelNumero">
+                <and mandatory="true" name="app.interfaz.numero.PanelNumero.actionPerformed[java.awt.event.ActionEvent]"/>
+                <and mandatory="true" name="app.interfaz.numero.PanelNumero.modificarNumero[]"/>
+                <and mandatory="true" name="app.interfaz.numero.PanelNumero.removeNotify[]"/>
+                <and mandatory="true" name="app.interfaz.numero.PanelNumero.update[java.util.Observable,java.lang.Object]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.numero.VentanaNumero"/>
+            <and mandatory="true" name="app.interfaz.notas.PanelNotas">
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.darNota[int]"/>
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.actionPerformed[java.awt.event.ActionEvent]"/>
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.cambiarNota[]"/>
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.removeNotify[]"/>
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.tocarNota[]"/>
+                <and mandatory="true" name="app.interfaz.notas.PanelNotas.update[java.util.Observable,java.lang.Object]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.notas.ReproductorNota">
+                <and mandatory="true" name="app.interfaz.notas.ReproductorNota.tocarNota[int,int]"/>
+                <and mandatory="true" name="app.interfaz.notas.ReproductorNota.run[]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.notas.VentanaNotas"/>
+            <and mandatory="true" name="app.interfaz.color.PanelColor">
+                <and mandatory="true" name="app.interfaz.color.PanelColor.actionPerformed[java.awt.event.ActionEvent]"/>
+                <and mandatory="true" name="app.interfaz.color.PanelColor.cambiarColor[]"/>
+                <and mandatory="true" name="app.interfaz.color.PanelColor.removeNotify[]"/>
+                <and mandatory="true" name="app.interfaz.color.PanelColor.update[java.util.Observable,java.lang.Object]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.color.VentanaColor"/>
+            <and mandatory="true" name="app.interfaz.binario.PanelBinario">
+                <and mandatory="true" name="app.interfaz.binario.PanelBinario.actionPerformed[java.awt.event.ActionEvent]"/>
+                <and mandatory="true" name="app.interfaz.binario.PanelBinario.modificarNumero[]"/>
+                <and mandatory="true" name="app.interfaz.binario.PanelBinario.removeNotify[]"/>
+                <and mandatory="true" name="app.interfaz.binario.PanelBinario.update[java.util.Observable,java.lang.Object]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.binario.VentanaBinario">
+                <and mandatory="true" name="app.interfaz.binario.VentanaBinario.actionPerformed[java.awt.event.ActionEvent]"/>
+                <or mandatory="true" name="app.interfaz.binario.VentanaBinario.crearNuevaVentana[]"/>
+                <and mandatory="true" name="app.interfaz.binario.VentanaBinario.main[java.lang.String[]]"/>
+                <and mandatory="true" name="app.interfaz.binario.VentanaBinario.reqFuncOpcion1[]"/>
+                <and mandatory="true" name="app.interfaz.binario.VentanaBinario.reqFuncOpcion2[]"/>
+            </and>
+            <and mandatory="true" name="app.interfaz.PanelExtension">
+                <and mandatory="true" name="app.interfaz.PanelExtension.actionPerformed[java.awt.event.ActionEvent]"/>
+            </and>
+        </and>
     </struct>
 </featureModel>
